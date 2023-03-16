@@ -1,5 +1,6 @@
 NAME		=	Colleen
 SRC			=	Colleen.c
+RM			=	rm -f
 
 all:		$(NAME)
 
@@ -7,7 +8,7 @@ $(NAME):	$(SRC)
 			$(CC) $(CFLAGS) -o $(NAME) $(SRC)
 
 clean:
-			$(RM) -f $(NAME)
+			$(RM) $(NAME)
 
 fclean:		clean
 
