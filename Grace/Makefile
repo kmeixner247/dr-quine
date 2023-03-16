@@ -11,6 +11,7 @@ clean:
 			$(RM) $(NAME)
 
 fclean:		clean
+			$(RM) Grace_kid.c
 
 re:			fclean all
 
