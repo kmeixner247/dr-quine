@@ -1,5 +1,7 @@
 NAME		=	Grace
 SRC			=	Grace.c
+CC			=	gcc
+CFLAGS		=	-Wall -Werror -Wextra
 RM			=	rm -f
 
 all:		$(NAME)

@@ -1,5 +1,7 @@
 NAME		=	Colleen
 SRC			=	Colleen.c
+CC			=	gcc
+CFLAGS		=	-Wall -Werror -Wextra
 RM			=	rm -f
 
 all:		$(NAME)
