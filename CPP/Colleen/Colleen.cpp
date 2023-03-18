@@ -13,11 +13,11 @@ string s[]={
 "        if (m) cout << q << ',';",
 "        cout << endl;",
 "    }",
+"}",
+"int main() {",
 "    /*",
 "        remember the C quine with write I mentioned?",
 "    */",
-"}",
-"int main() {",
 "    print_from_until(s,0,2,false);",
 "    print_from_until(s,0,23,true);",
 "    print_from_until(s,3,23,false);",
@@ -34,11 +34,11 @@ void print_from_until(string s[], int f, int u, bool m) {
         if (m) cout << q << ',';
         cout << endl;
     }
+}
+int main() {
     /*
         remember the C quine with write I mentioned?
     */
-}
-int main() {
     print_from_until(s,0,2,false);
     print_from_until(s,0,23,true);
     print_from_until(s,3,23,false);
