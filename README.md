@@ -22,8 +22,11 @@ A program that strictly contains:
 When executed, the program must create a file named Grace_kid.[c/s/cpp] that contains identical source code to the original source file.
 
 ## Sully
-A program that contains an integer that is declared and initialized to 5. When executed, it must create a new source file named Sully_X, 
+A program that contains an integer that is declared and initialized to 5. 
+
+When executed, it must create a new source file named Sully_X, 
 where X is the value of the integer decremented by one.
 
 The source code of the new file must be identical to the previous one, except for the value of the integer being decremented by one.
+
 If the integer is lower than 1, the program must not do anything.
