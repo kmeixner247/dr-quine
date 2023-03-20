@@ -23,16 +23,15 @@ string s[]={
 "    */",
 "}",
 "int main() {",
+"    if (i < 1) return 0;",
 "    char file[] = {'S','u','l','l','y','_',(char)i+47,'.','c','p','p',0};",
 "    ofstream of(file);",
 "    print_from_until(of,s,0,4,false);",
 "    print_from_until(of,s,0,33,true);",
 "    print_from_until(of,s,5,33,false);",
-"    if (i>0) {",
-"        char cmd[] = {'c','+','+',' ','-','o',' ','S','u','l','l','y','_',(char)i+47,' ','S','u','l','l','y','_',(char)i+47,'.','c','p','p',' ','&','&',' ','.','/','S','u','l','l','y','_',(char)i+47,0};",
-"        char mode[] = {'w',0};",
-"        popen(cmd, mode);",
-"    }",
+"    char cmd[] = {'c','+','+',' ','-','o',' ','S','u','l','l','y','_',(char)i+47,' ','S','u','l','l','y','_',(char)i+47,'.','c','p','p',' ','&','&',' ','.','/','S','u','l','l','y','_',(char)i+47,0};",
+"    char mode[] = {'w',0};",
+"    popen(cmd, mode);",
 "}",
 "/*",
 "    but that much work just to avoid double quotes?",
@@ -52,16 +51,15 @@ void print_from_until(ofstream &of, string s[], int f, int u, bool m) {
     */
 }
 int main() {
+    if (i < 1) return 0;
     char file[] = {'S','u','l','l','y','_',(char)i+47,'.','c','p','p',0};
     ofstream of(file);
     print_from_until(of,s,0,4,false);
-    print_from_until(of,s,0,33,true);
-    print_from_until(of,s,5,33,false);
-    if (i>0) {
-        char cmd[] = {'c','+','+',' ','-','o',' ','S','u','l','l','y','_',(char)i+47,' ','S','u','l','l','y','_',(char)i+47,'.','c','p','p',' ','&','&',' ','.','/','S','u','l','l','y','_',(char)i+47,0};
-        char mode[] = {'w',0};
-        popen(cmd, mode);
-    }
+    print_from_until(of,s,0,32,true);
+    print_from_until(of,s,5,32,false);
+    char cmd[] = {'c','+','+',' ','-','o',' ','S','u','l','l','y','_',(char)i+47,' ','S','u','l','l','y','_',(char)i+47,'.','c','p','p',' ','&','&',' ','.','/','S','u','l','l','y','_',(char)i+47,0};
+    char mode[] = {'w',0};
+    popen(cmd, mode);
 }
 /*
     but that much work just to avoid double quotes?
